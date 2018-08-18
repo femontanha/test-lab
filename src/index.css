@@ -1,5 +1,14 @@
+:root {
+  --app-text-color: #888888;
+  --primary-bg-color: #A3F7B5;
+  --primary-title-color: #2F9C95;
+  --post-title-color: #40C9A2;
+}
+
 body {
+  color: var(--app-text-color);
+  font-family: sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }

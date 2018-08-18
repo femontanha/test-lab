@@ -1,6 +1,12 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../../actions/posts';
+import Posts from '../../components/Posts/Posts';
+
+const propTypes = {
+  posts: PropTypes.object.isRequired,
+};
 
 class PostsContainer extends PureComponent {
   componentDidMount() {
@@ -8,9 +14,10 @@ class PostsContainer extends PureComponent {
   }
 
   render() {
-    console.log('this.props', this.props.posts)
+    const { posts } = this.props;
+
     return (
-      <div>Teste</div>
+      <Posts posts={ posts } />
     );
   }
 }
@@ -24,5 +31,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
   fetchPosts,
 }
+
+PostsContainer.propTypes = propTypes;
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostsContainer);
