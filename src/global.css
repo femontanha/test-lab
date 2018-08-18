@@ -1,0 +1,18 @@
+/* Global Styles */
+
+:global(.app-button) {
+  background-color: var(--primary-bg-color);
+  border-radius: 5px;
+  color: var(--primary-title-color);
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+:global(.app-button):hover {
+  background-color: var(--post-title-color);
+  color: #FFF;
+  transition: all .3s ease;
+}

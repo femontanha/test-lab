@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './posts.css';
 
@@ -21,6 +22,7 @@ class Posts extends PureComponent {
   render() {
     return (
       <div className={ styles.posts }>
+        <Link className="app-button" to="users">View Users</Link>
         { this.renderPosts() }
       </div>
     );

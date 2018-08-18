@@ -1,0 +1,17 @@
+.users {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 30px;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 15px;
+  max-width: 300px;
+  margin: 30px auto 0;
+}
+
+.list:hover {
+  background-color: #eee;
+}

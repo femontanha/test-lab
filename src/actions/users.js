@@ -1,19 +1,19 @@
-import * as postsAction from '../enums/postsAction';
+import * as usersAction from '../enums/usersAction';
 
-export const fetchPosts = () => {
+export const fetchUsers = () => {
   return (dispatch) => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => {
         response.json().then(payload => {
           dispatch({
-            type: postsAction.FETCH_POSTS_SUCCESS,
+            type: usersAction.FETCH_USERS_SUCCESS,
             payload,
           })
         });
       })
       .then(error => {
         dispatch({
-          type: postsAction.FETCH_POSTS_ERROR,
+          type: usersAction.FETCH_USERS_ERROR,
           payload: error
         })
       })
