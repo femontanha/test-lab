@@ -92,12 +92,18 @@
       "react-app"
     ],
     "plugins": [
-      ["react-css-modules", {
-        "webpackHotModuleReloading": true
-      }]
+      [
+        "react-css-modules",
+        {
+          "webpackHotModuleReloading": true
+        }
+      ]
     ]
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "react-test-renderer": "^16.4.2"
   }
 }

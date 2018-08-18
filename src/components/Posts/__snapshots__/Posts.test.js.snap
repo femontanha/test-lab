@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render posts 1`] = `
+<div
+  className={undefined}
+>
+  <article
+    className={undefined}
+  >
+    <h1
+      className={undefined}
+    >
+      Title
+    </h1>
+    <p
+      className={undefined}
+    >
+      Body
+    </p>
+  </article>
+</div>
+`;
