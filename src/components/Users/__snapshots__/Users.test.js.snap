@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render users 1`] = `
+<div
+  className={undefined}
+>
+  <a
+    className="app-button"
+    href="/"
+    onClick={[Function]}
+  >
+    View Posts
+  </a>
+  <ul
+    className={undefined}
+  >
+    <li>
+      username
+    </li>
+    <li>
+      name
+    </li>
+    <li>
+      email
+    </li>
+    <li>
+      phone
+    </li>
+    <li>
+      website
+    </li>
+  </ul>
+  <ul
+    className={undefined}
+  >
+    <li>
+      username
+    </li>
+    <li>
+      name
+    </li>
+    <li>
+      email
+    </li>
+    <li>
+      phone
+    </li>
+    <li>
+      website
+    </li>
+  </ul>
+</div>
+`;

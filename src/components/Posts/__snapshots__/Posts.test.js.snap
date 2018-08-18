@@ -4,6 +4,13 @@ exports[`render posts 1`] = `
 <div
   className={undefined}
 >
+  <a
+    className="app-button"
+    href="/users"
+    onClick={[Function]}
+  >
+    View Users
+  </a>
   <article
     className={undefined}
   >

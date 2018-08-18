@@ -11,7 +11,7 @@ class Users extends PureComponent {
   renderUsers() {
     const { users } = this.props;
     return Object.keys(users).map((item) => (
-      <ul className={ styles.list } key={ users[item].id }>
+      <ul key={ users[item].id } className={ styles.list }>
         <li>{ users[item].username }</li>
         <li>{ users[item].name }</li>
         <li>{ users[item].email }</li>

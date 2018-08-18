@@ -1,6 +1,7 @@
 import React from 'react';
 import Posts from './Posts';
 import renderer from 'react-test-renderer';
+import { MemoryRouter } from 'react-router-dom';
 
 test('render posts', () => {
   const posts = {
@@ -13,7 +14,9 @@ test('render posts', () => {
   }
 
   const component = renderer.create(
-    <Posts posts={ posts } />,
+    <MemoryRouter initialEntries={[ '/' ]}>
+      <Posts posts={ posts } />
+    </MemoryRouter>
   );
 
   let tree = component.toJSON();
