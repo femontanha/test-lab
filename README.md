@@ -14,4 +14,4 @@ Project for an interview based;
 ### Fake API
 https://jsonplaceholder.typicode.com/
 
-Presentation: [youtube-link]
+Presentation: https://www.youtube.com/watch?v=rayaqi-GNGQ
