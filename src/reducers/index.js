@@ -1,8 +1,5 @@
 import { combineReducers } from 'redux';
-
-const posts = (state = [], action) => {
-  return state;
-};
+import posts from './posts';
 
 export default combineReducers({
   posts,
